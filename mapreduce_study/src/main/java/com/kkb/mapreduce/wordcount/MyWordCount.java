@@ -36,7 +36,7 @@ public class MyWordCount extends Configured implements Tool {
         // 第八步 输出k3 v3进行保存
         job.setOutputFormatClass(TextOutputFormat.class);
         // 输出路径不可存在
-        TextOutputFormat.setOutputPath(job, new Path("file:///d:\\360\\out_result"));
+        TextOutputFormat.setOutputPath(job, new Path("file:///d:\\360\\out_result1"));
         boolean b = job.waitForCompletion(true);
         return b?0:1;
     }
@@ -44,8 +44,8 @@ public class MyWordCount extends Configured implements Tool {
     public static void main(String[] args) throws Exception {
         Configuration configuration = new Configuration();
         configuration.set("hello", "word");
-        configuration.set("mapreduce.framework.name", "local");
-        configuration.set("yarn.resourcemanager.hostname", "local");
+//        configuration.set("mapreduce.framework.name", "local");
+//        configuration.set("yarn.resourcemanager.hostname", "local");
         int run = ToolRunner.run(configuration, new MyWordCount(), args);
         System.exit(run);
     }
