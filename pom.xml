@@ -17,5 +17,6 @@
         <module>mapreduce_work</module>
         <module>mapreduce_work02</module>
         <module>mapreduce_work03</module>
+        <module>mapreduce_first</module>
     </modules>
 </project>
