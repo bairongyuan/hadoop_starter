@@ -16,5 +16,6 @@
         <module>zookeeper_study01</module>
         <module>mapreduce_work</module>
         <module>mapreduce_work02</module>
+        <module>mapreduce_work03</module>
     </modules>
 </project>
