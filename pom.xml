@@ -19,5 +19,7 @@
         <module>mapreduce_work03</module>
         <module>mapreduce_first</module>
         <module>mapreduce_second</module>
+        <module>hive_first</module>
+        <module>hbase_first</module>
     </modules>
 </project>
